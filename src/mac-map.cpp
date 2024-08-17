@@ -77,4 +77,19 @@ void InitMacMap() {
 
     imgMap_.insert("0e89fd0570ff", "박정식.jpg");
     wavMap_.insert("0e89fd0570ff", "박정식.wav");
+
+    imgMap_.insert("5ccb994dc3b0", "심수민.jpg");
+    wavMap_.insert("5ccb994dc3b0", "심수민.wav");
+
+    imgMap_.insert("b04a6a2f3380", "이재준.jpg");
+    wavMap_.insert("b04a6a2f3380", "이재준.wav");
+
+    imgMap_.insert("0280b8c9e8c6", "이창현.jpg");
+    wavMap_.insert("0280b8c9e8c6", "이창현.wav");
+
+    imgMap_.insert("4ad5111d5529", "고예준.jpg");
+    wavMap_.insert("4ad5111d5529", "고예준.wav");
+
+    imgMap_.insert("2ef5004639f4", "오지훈.jpg");
+    wavMap_.insert("2ef5004639f4", "오지훈.wav");
 }
