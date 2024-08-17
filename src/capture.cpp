@@ -100,7 +100,7 @@ void CaptureThread::run() {
         }
         //printf("%u bytes captured\n", header->caplen);
         Mac mac = info_packet(packet);
-        if(!mac.isNull()){
+		if(!mac.isNull() && !mac.isMulticast()){
 			qDebug() << "captured" << QString::fromStdString(std::string(mac));
             emit captured(mac);
         }
