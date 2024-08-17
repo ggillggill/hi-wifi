@@ -1,5 +1,4 @@
-#ifndef MAC-MAP_H
-#define MAC-MAP_H
+#pragma once
 
 #include <QMap>
 #include <QString>
@@ -74,6 +73,6 @@ void InitMacMap() {
     imgMap_.insert("8a4fdbf693f9", "박철준.jpg");
     wavMap_.insert("8a4fdbf693f9", "박철준.wav");
 
+    imgMap_.insert("86a2a1358471", "김태양.jpg");
+    wavMap_.insert("86a2a1358471", "김태양.wav");
 }
-
-#endif // MAC-MAP_H
