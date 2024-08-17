@@ -14,7 +14,7 @@ void InitMacMap() {
     imgMap_.insert("c2fdf3393942", "이경문.jpg");
     wavMap_.insert("c2fdf3393942", "이경문.m4a");
 
-    imgMap.insert("6a19dd9cf6cf", "김택우.jpg");
+    imgMap_.insert("6a19dd9cf6cf", "김택우.jpg");
     wavMap_.insert("6a19dd9cf6cf", "김택우.wav");
 
     //wavMap_.insert("ee7ec697dea6", "박현준.jpg"); // todo
@@ -74,8 +74,6 @@ void InitMacMap() {
     imgMap_.insert("8a4fdbf693f9", "박철준.jpg");
     wavMap_.insert("8a4fdbf693f9", "박철준.wav");
 
-    imgMap_.insert("", ".jpg");
-    wavMap_.insert("", ".wav");
 }
 
 #endif // MAC-MAP_H
