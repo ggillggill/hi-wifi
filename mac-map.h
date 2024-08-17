@@ -32,7 +32,7 @@ void InitMacMap() {
     imgMap_.insert("ea544f2bcda8", "윤태호.jpg");
     wavMap_.insert("ea544f2bcda8", "윤태호.wav");
 
-    imgMap_.insert("288eecadbb4d", "임학수.jpg"); //
+    imgMap_.insert("288eecadbb4d", "임학수.jpg");
     wavMap_.insert("288eecadbb4d", "임학수.wav");
 
     imgMap_.insert("640c9138c83e", "이승현.jpg");
@@ -46,6 +46,21 @@ void InitMacMap() {
 
     imgMap_.insert("4ec404367494", "김은지.jpg");
     wavMap_.insert("4ec404367494", "김은지.wav");
+
+    imgMap_.insert("3a3a5bda1186", "송희원.jpg");
+    wavMap_.insert("3a3a5bda1186", "송희원.wav");
+    
+    imgMap_.insert("b62d24213f92", "최유정.jpg");
+    wavMap_.insert("b62d24213f92", "최유정.wav");
+
+    imgMap_.insert("4a46ae136eac", "김현석.jpg");
+    wavMap_.insert("4a46ae136eac", "김현석.wav");
+
+    imgMap_.insert("a82bb9b7a068", "정민규.jpg");
+    wavMap_.insert("a82bb9b7a068", "정민규.wav");
+
+    imgMap_.insert("669353267f82", "서원재.jpg");
+    wavMap_.insert("669353267f82", "서원재.wav");
 }
 
 #endif // MAC-MAP_H
