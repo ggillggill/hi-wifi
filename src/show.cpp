@@ -1,4 +1,5 @@
 #include "show.h"
+#include <QPixmap>
 
 Show::Show(QWidget *parent) : QWidget(parent){}
 
@@ -8,10 +9,10 @@ void Show::PlayWavFile(Mac macAddr)
     macStr = macStr.replace(":", "").toLower();
     MacMap::iterator it = wavMap_.find(macStr);
     if (it == wavMap_.end()) {
-        qDebug() << "not found";
+        qDebug() << "not found2" << macStr;
         return;
     }
-#include <QPixmap>
+
     QString wavFileName = "wav/" + it.value();
     qDebug() << QFile::exists(wavFileName);
 
@@ -29,7 +30,7 @@ void Show::OpenImgFile(Mac macAddr)
     macStr = macStr.replace(":", "").toLower();
     MacMap::iterator it = imgMap_.find(macStr);
     if (it == imgMap_.end()) {
-        qDebug() << "not found";
+        qDebug() << "not found1"<<macStr;
         return;
     }
 

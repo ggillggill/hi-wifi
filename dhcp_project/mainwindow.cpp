@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "../src/show.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,7 +16,10 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::doCapture(Mac mac) {
-    qDebug() << "captured" << std::string(mac);
+    qDebug() << std::string(mac);
+    Show* show = new Show();
+    show->PlayWavFile(mac);
+    show->OpenImgFile(mac);
 }
 
 void MainWindow::on_pushButton_clicked()

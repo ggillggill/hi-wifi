@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,6 +26,7 @@ HEADERS += \
     ../src/iphdr.h \
     ../src/mac-map.h \
     ../src/mac.h \
+    ../src/show.h \
     ../src/udp.h \
     mainwindow.h
 
@@ -36,5 +37,6 @@ SOURCES += \
     ../src/iphdr.cpp \
     ../src/mac-map.cpp \
     ../src/mac.cpp \
+    ../src/show.cpp \
     main.cpp \
     mainwindow.cpp
