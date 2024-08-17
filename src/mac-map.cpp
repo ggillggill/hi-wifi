@@ -12,8 +12,11 @@ void InitMacMap() {
     //wavMap_.insert("ee7ec697dea6", "박현준.jpg"); // todo
     //imgMap_.insert("ee7ec697dea6", "박현준.wav"); // todo
 
-    //wavMap_.insert("6cacc26b618b", "오원영.jpg"); // todo
-    //imgMap_.insert("6cacc26b618b", "오원영.wav");
+    //imgMap_.insert("", "김지윤.jpg");
+    //wavMap_.insert("", "김지윤.wav");
+
+    imgMap_.insert("6cacc26b618b", "오원영.jpg");
+    wavMap_.insert("6cacc26b618b", "오원영.wav");
 
     imgMap_.insert("42c2b145011e", "강성우.jpg");
     wavMap_.insert("42c2b145011e", "강성우.wav");
@@ -27,8 +30,8 @@ void InitMacMap() {
     imgMap_.insert("288eecadbb4d", "임학수.jpg");
     wavMap_.insert("288eecadbb4d", "임학수.wav");
 
-    imgMap_.insert("640c9138c83e", "이승현.jpg");
-    wavMap_.insert("640c9138c83e", "이승현.wav");
+    imgMap_.insert("ee0bec3993e5", "이승현.jpg");
+    wavMap_.insert("ee0bec3993e5", "이승현.wav");
 
     imgMap_.insert("6661ef750144", "이승대.jpg");
     wavMap_.insert("6661ef750144", "이승대.wav");
@@ -93,6 +96,18 @@ void InitMacMap() {
     imgMap_.insert("2ef5004639f4", "오지훈.jpg");
     wavMap_.insert("2ef5004639f4", "오지훈.wav");
 
-    imgMap_.insert("", ".jpg");
-    wavMap_.insert("", ".wav");
+    imgMap_.insert("8a7f46e5dca4", "신예지.jpg");
+    wavMap_.insert("8a7f46e5dca4", "신예지.wav");
+
+    imgMap_.insert("565c5c2b656f", "변정희.jpg");
+    wavMap_.insert("565c5c2b656f", "변정희.wav");
+
+    imgMap_.insert("9a8565d46181", "임영서.jpg");
+    wavMap_.insert("9a8565d46181", "임영서.wav");
+
+    imgMap_.insert("2aa4fb686b11", "이한선.jpg");
+    wavMap_.insert("2aa4fb686b11", "이한선.wav");
+
+    imgMap_.insert("fe47e339f00a", "김동영.jpg");
+    wavMap_.insert("fe47e339f00a", "김동영.wav");
 }
