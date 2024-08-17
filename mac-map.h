@@ -5,7 +5,9 @@
 #include <QString>
 
 struct MacMap : QMap<QString, QString> {
-} imgMap_, wavMap_;
+};
+
+extern MacMap imgMap_, wavMap_;
 
 
 void InitMacMap() {
@@ -23,6 +25,27 @@ void InitMacMap() {
 
     imgMap_.insert("42c2b145011e", "강성우.jpg");
     wavMap_.insert("42c2b145011e", "강성우.wav");
+
+    imgMap_.insert("1aabcd0ee0e8", "전성현.jpg");
+    wavMap_.insert("1aabcd0ee0e8", "전성현.wav");
+
+    imgMap_.insert("ea544f2bcda8", "윤태호.jpg");
+    wavMap_.insert("ea544f2bcda8", "윤태호.wav");
+
+    imgMap_.insert("288eecadbb4d", "임학수.jpg"); //
+    wavMap_.insert("288eecadbb4d", "임학수.wav");
+
+    imgMap_.insert("640c9138c83e", "이승현.jpg");
+    wavMap_.insert("640c9138c83e", "이승현.wav");
+
+    imgMap_.insert("6661ef750144", "이승대.jpg");
+    wavMap_.insert("6661ef750144", "이승대.wav");
+
+    imgMap_.insert("daada476a606", "권보연.jpg");
+    wavMap_.insert("daada476a606", "권보연.wav");
+
+    imgMap_.insert("4ec404367494", "김은지.jpg");
+    wavMap_.insert("4ec404367494", "김은지.wav");
 }
 
 #endif // MAC-MAP_H
