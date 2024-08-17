@@ -68,4 +68,13 @@ void InitMacMap() {
 
     imgMap_.insert("86a2a1358471", "김태양.jpg");
     wavMap_.insert("86a2a1358471", "김태양.wav");
+
+    imgMap_.insert("6a439440d167", "안승현.jpg");
+    wavMap_.insert("6a439440d167", "안승현.wav");
+
+    imgMap_.insert("e68b3144b031", "양준현.jpg");
+    wavMap_.insert("e68b3144b031", "양준현.wav");
+
+    imgMap_.insert("0e89fd0570ff", "박정식.jpg");
+    wavMap_.insert("0e89fd0570ff", "박정식.wav");
 }
