@@ -16,10 +16,14 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::doCapture(Mac mac) {
-    qDebug() << std::string(mac);
-    Show* show = new Show();
-    show->PlayWavFile(mac);
-    show->OpenImgFile(mac);
+
+	QString macStr = QString::fromStdString(std::string(mac));
+	macStr = macStr.replace(":", "").toLower();
+
+	qDebug() << macStr;
+	Show* show = new Show(nullptr, macStr);
+	show->PlayWavFile();
+	show->OpenImgFile();
 }
 
 void MainWindow::on_pushButton_clicked()

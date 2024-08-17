@@ -16,21 +16,36 @@
 #include "mac.h"
 #include "mac-map.h"
 
+extern QSet<QString> playingMac_;
+
 class Show : public QWidget
 {
     Q_OBJECT
 public:
-    Show(QWidget *parent = nullptr);
+	Show(QWidget *parent, QString mac) : QWidget(parent), mac_(mac) {
+		if ((playingMac_.find(mac) == playingMac_.end())) {
+			qDebug() << "ok!!!";
+			ok_ = true;
+			playingMac_.insert(mac);
+		} else {
+			qDebug() << "not ok!!!";
+			ok_ = false;
+		}
+	}
+	bool ok_;
+	QString mac_;
     QSoundEffect effect;
 
     ~Show() {
         deleteLater();
     }
 
-    void PlayWavFile(Mac macAddr);
+	void PlayWavFile();
 
-    void OpenImgFile(Mac macAddr);
+	void OpenImgFile();
 
+public slots:
+	void doPlayingChanged();
 };
 
 

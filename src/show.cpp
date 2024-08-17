@@ -1,15 +1,15 @@
 #include "show.h"
 #include <QPixmap>
 
-Show::Show(QWidget *parent) : QWidget(parent){}
+QSet<QString> playingMac_;
 
-void Show::PlayWavFile(Mac macAddr)
+void Show::PlayWavFile()
 {
-    QString macStr = QString::fromStdString(std::string(macAddr));
-    macStr = macStr.replace(":", "").toLower();
-    MacMap::iterator it = wavMap_.find(macStr);
+	if (!ok_) return;
+
+	MacMap::iterator it = wavMap_.find(mac_);
     if (it == wavMap_.end()) {
-        qDebug() << "not found2" << macStr;
+		qDebug() << "not found2" << mac_;
         return;
     }
 
@@ -17,6 +17,7 @@ void Show::PlayWavFile(Mac macAddr)
     qDebug() << QFile::exists(wavFileName);
 
     if (!wavFileName.isEmpty()) {
+		QObject::connect(&effect, &QSoundEffect::playingChanged, this, &Show::doPlayingChanged);
         QAudioDevice ad(QMediaDevices::defaultAudioOutput());
         effect.setAudioDevice(ad);
         effect.setSource(QUrl::fromLocalFile(wavFileName));
@@ -24,13 +25,13 @@ void Show::PlayWavFile(Mac macAddr)
     }
 }
 
-void Show::OpenImgFile(Mac macAddr)
+void Show::OpenImgFile()
 {
-    QString macStr = QString::fromStdString(std::string(macAddr));
-    macStr = macStr.replace(":", "").toLower();
-    MacMap::iterator it = imgMap_.find(macStr);
+	if (!ok_) return;
+
+	MacMap::iterator it = imgMap_.find(mac_);
     if (it == imgMap_.end()) {
-        qDebug() << "not found1"<<macStr;
+		qDebug() << "not found1"<<mac_;
         return;
     }
 
@@ -49,7 +50,17 @@ void Show::OpenImgFile(Mac macAddr)
         lbView->setPixmap(QPixmap::fromImage(img));
 
         lbView->setAlignment(Qt::AlignCenter);
-		//lbView->show();
-		lbView->showMaximized();
+		lbView->show();
+		//lbView->showMaximized();
     }
+}
+
+void Show::doPlayingChanged()
+{
+	qDebug() << effect.isPlaying();
+	if (!effect.isPlaying()) {
+		playingMac_.remove(mac_);
+		deleteLater();
+
+	}
 }
