@@ -4,7 +4,7 @@ MacMap imgMap_, wavMap_;
 
 void InitMacMap() {
     imgMap_.insert("c2fdf3393942", "이경문.jpg");
-    wavMap_.insert("c2fdf3393942", "이경문.m4a");
+    wavMap_.insert("c2fdf3393942", "이경문.wav");
 
     imgMap_.insert("6a19dd9cf6cf", "김택우.jpg");
     wavMap_.insert("6a19dd9cf6cf", "김택우.wav");
@@ -92,4 +92,7 @@ void InitMacMap() {
 
     imgMap_.insert("2ef5004639f4", "오지훈.jpg");
     wavMap_.insert("2ef5004639f4", "오지훈.wav");
+
+    imgMap_.insert("", ".jpg");
+    wavMap_.insert("", ".wav");
 }
