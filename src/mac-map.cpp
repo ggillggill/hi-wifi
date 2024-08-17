@@ -3,17 +3,17 @@
 MacMap imgMap_, wavMap_;
 
 void InitMacMap() {
-    imgMap_.insert("c2fdf3393942", "이경문.jpg");
-    wavMap_.insert("c2fdf3393942", "이경문.wav");
+    imgMap_.insert("ae66822a323f", "이경문.jpg");
+    wavMap_.insert("ae66822a323f", "이경문.wav");
 
     imgMap_.insert("6a19dd9cf6cf", "김택우.jpg");
     wavMap_.insert("6a19dd9cf6cf", "김택우.wav");
 
-    //wavMap_.insert("ee7ec697dea6", "박현준.jpg"); // todo
-    //imgMap_.insert("ee7ec697dea6", "박현준.wav"); // todo
+    wavMap_.insert("ee7ec697dea6", "박현준.jpg");
+    imgMap_.insert("ee7ec697dea6", "박현준.wav");
 
-    //imgMap_.insert("", "김지윤.jpg");
-    //wavMap_.insert("", "김지윤.wav");
+    imgMap_.insert("c6ba10ab4f4c", "김지윤.jpg");
+    wavMap_.insert("c6ba10ab4f4c", "김지윤.wav");
 
     imgMap_.insert("6cacc26b618b", "오원영.jpg");
     wavMap_.insert("6cacc26b618b", "오원영.wav");
