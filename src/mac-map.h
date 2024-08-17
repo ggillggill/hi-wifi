@@ -61,6 +61,21 @@ void InitMacMap() {
 
     imgMap_.insert("669353267f82", "서원재.jpg");
     wavMap_.insert("669353267f82", "서원재.wav");
+
+    imgMap_.insert("163b0740fe40", "김송희.jpg");
+    wavMap_.insert("163b0740fe40", "김송희.wav");
+
+    imgMap_.insert("6ed07afbbbfd", "이새나.jpg");
+    wavMap_.insert("6ed07afbbbfd", "이새나.wav");
+
+    imgMap_.insert("56b3ca00b0ca", "문경태.jpg");
+    wavMap_.insert("56b3ca00b0ca", "문경태.wav");
+
+    imgMap_.insert("8a4fdbf693f9", "박철준.jpg");
+    wavMap_.insert("8a4fdbf693f9", "박철준.wav");
+
+    imgMap_.insert("", ".jpg");
+    wavMap_.insert("", ".wav");
 }
 
 #endif // MAC-MAP_H
