@@ -49,6 +49,7 @@ void Show::OpenImgFile(Mac macAddr)
         lbView->setPixmap(QPixmap::fromImage(img));
 
         lbView->setAlignment(Qt::AlignCenter);
-        lbView->showMaximized();
+		//lbView->show();
+		lbView->showMaximized();
     }
 }

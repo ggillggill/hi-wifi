@@ -49,7 +49,7 @@ bool isDHCP(libnet_udp_hdr* udphdr){
     uint16_t sport = ntohs(udphdr->uh_sport);
     uint16_t dport = ntohs(udphdr->uh_dport);
 
-    qDebug() << sport << dport;
+	// qDebug() << sport << dport;
     return ((sport == SERVER) && (dport == CLIENT)) || ((sport == CLIENT) &&(dport == SERVER));
 
 }
@@ -65,7 +65,7 @@ Mac info_packet(const u_char* packet){
     struct libnet_ipv4_hdr* iphdr = (struct libnet_ipv4_hdr*)(packet +sizeof(ethernet_hdr));
     uint8_t ip_p = iphdr->ip_p;
     uint16_t iphdr_len = iphdr->ip_hl*4;
-    qDebug() << iphdr_len;
+	//qDebug() << iphdr_len;
 
     if(ip_p != UDP) return Mac::nullMac();
 
